@@ -1,12 +1,12 @@
 import itertools
 
 
-def getAnagrams(elements):
+def get_anagrams(elements):
     return sorted(set(["".join(perm) for perm in itertools.permutations(elements)]))
 
 
-def getNumberOfAnagrams(elements):
-    length = len(getAnagrams(elements))
+def get_number_of_anagrams(elements):
+    length = len(get_anagrams(elements))
     return length
 
 
